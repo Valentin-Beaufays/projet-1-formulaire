@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #303030; }
+
+.message {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
+  background-color: #15c5bd;
+  color: #303030;
+  border-radius: 25px; }
+
+.btn {
+  background-color: #303030;
+  color: #FFF; }
+
+/*#15c5bd + #FFF + #303030*/

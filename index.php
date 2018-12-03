@@ -11,30 +11,68 @@
     <title>Hackers Poulette</title>
 </head>
 <body>
-
+<section class="message">
 <form action="#" method="post">
 
-    <p>Nom: <input type="text" name="name" /></p>
-    <p>Prénom: <input type="text" name="firstName" /></p>
-    <p>Email: <input type="text" name="email" /></p>
-    <p>Pays: <input type="text" name="country" /></p>
-    <p>Message: <input type="text" name="message" /></p>
-    <p>Sexe:</p>
-    <ul>
-        <li><input type="radio" name="gender" value="homme" />Homme</li>
-        <li><input type="radio" name="gender" value="femme" />Femme</li>
-        <li><input type="radio" name="gender" value="non-binaire" />Non-binaire</li>
-        <li><input type="radio" name="gender" value="autre" />Autre</li>
-    </ul>
-    <select name="optionSelector">
-        <option name="option1" value="option1">option 1</option>
-        <option name="option2" value="option2">option 2</option>
-        <option name="option3" value="option3">option 3</option>
-    </select>
-    <input type="submit" name="submit"/>
-
+    <div class="form-group">
+        <label for="nameInput">Nom: </label>
+        <input type="text" class="form-control" id="nameInput" name="name" />
+    </div>
+    <div class="form-group">
+        <label for="firstNameInput">Prénom: </label>
+        <input type="text" class="form-control" id="firstNameInput" name="firstName" />
+    </div>
+    <div class="form-group">
+        <label for="emailInput">Email: </label>
+        <input type="email" class="form-control" id="emailInput" name="email" />
+    </div>
+    <div class="form-group">
+        <label for="countryInput">Pays: </label>
+        <input type="text" class="form-control" id="countryInput" name="country" />
+    </div>
+    <div class="form-group">
+        <label for="messageInput">Message: </label>
+        <textarea class="form-control" id="messageInput" name="message" rows="3"></textarea>
+    </div>
+    <fieldset class="form-group">
+        <legend>Sexe:</legend>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" id="optionsHomme" name="gender" value="homme" />
+                Homme
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" id="optionFemme" name="gender" value="femme" />
+                Femme
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" id="optionNonBinaire" name="gender" value="non-binaire" />
+                Non-binaire
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" id="optionAutre" name="gender" value="autre" />
+                Autre
+            </label>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <label for="selectOption">options: </label>
+        <select multiple class="form-control" id="selectOption" name="optionSelector">
+            <option selected name="optionAutre" value="autre">Autre...</option>
+            <option name="option1" value="option1">option 1</option>
+            <option name="option2" value="option2">option 2</option>
+            <option name="option3" value="option3">option 3</option>
+        </select>
+    </div>
+    <button type="submit" class="btn">Valider</button>
 </form>
-    
+</section>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/script.js"></script>    
 </body>
